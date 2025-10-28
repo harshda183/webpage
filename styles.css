@@ -58,13 +58,16 @@ h4 {text-align: center;
     letter-spacing: 0.5px;}
 
 /* About Section */
-#About 
-.image-container {
-    diplay: flex;
-    justify-content:center;
-    align-items: center;;
+#About
+.center-margin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.image-wrapper {
+    text-align: center;
+}
 /* Paragraphs */
 p {
     text-align: center;
