@@ -195,6 +195,17 @@ h6 {
     margin: 0;
     letter-spacing: 1px;
 }
+button {
+    background-color: #1760a5;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
 table  {
     border: 10px;
     border-color: 1px solid #1760a5;
