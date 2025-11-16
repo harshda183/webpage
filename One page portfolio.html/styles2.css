@@ -1,109 +1,4 @@
 
-
-
-
-input[type="submit"]:hover, form button:hover {
-    background: #174777;
-}
-
-.to-top {
-    position:fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    background-color: #1760a5;
-}
-h6 {
-    text-align: center;
-    background: #1760a5;
-    color: white;
-    padding: 1.2rem 0 0.5rem 0;
-    margin: 0;
-    letter-spacing: 1px;
-}
-button {
-    background-color: #1760a5;
-    color: white;
-    padding: 10px 20px;
-    margin: 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-
-}
-table  {
-    border: 10px;
-    border-color: 1px solid #1760a5;
-    border-collapse: collapse;
-}/* General Body Styles */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6fa;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header and Navbar */
-h1 {
-    text-align: center;
-    background: #1760a5;
-    color: white;
-    padding: 1.2rem 0 0.5rem 0;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    background: #1760a5;
-    margin: 0;
-    padding: 0.2rem 0;
-    list-style: none;
-}
-
-ul li {
-    margin: 0 1.3rem;
-}
-
-ul a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
-
-ul a:hover {
-    text-decoration: underline;
-}
-
-/* Section Headings */
-h2 {
-    text-align: center;
-    margin-top: 2.5rem;
-    color: #222d3b;
-    font-size: 2rem;
-    letter-spacing: 0.5px;
-}
-
-h4 {text-align: center;
-    margin-top: 2.5rem;
-    color: #222d3b;
-    font-size: 2rem;
-    letter-spacing: 0.5px;}
-
-/* About Section */
-#About
-
-/* Paragraphs */
-p {
-    text-align: center;
-    margin: 1.5rem auto 1rem auto;
-    color: #4b5563;
-    max-width: 700px;
-}
-
 /* Projects Section */
 #Projects ul {
     display: flex;
@@ -210,4 +105,96 @@ input[type="submit"], form button {
     margin: 1rem 0 0 0;
     align-self: center;
     transition: background 0.1s;
+}
+p1 {
+    font-size: 5.2rem;
+}
+ h7 {
+    font-size: 6.2rem;
+}
+#about,
+#skills,
+#projects{
+    text-align: left;
+    margin-left: 0;
+}
+/*Section alignment*/
+.skills-section{
+    text-align: left;
+    margin-top: 30px;
+}
+/*Row ofcards*/
+.skills-row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Each blue card*/
+.skill-card{
+    background: #0b56c4;
+    color: #fff;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*Title inside card*/
+.skill-card{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*Level text*/
+.skill-card p{
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+/*Hover animation*/
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,15);
+}
+/*Responsive*/
+@media(max-width: 768px) {
+    .skills-row{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.project-card{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.project-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opcity 0.6s ease;
+    
+}
+/*First image visible*/
+.img-front {
+    opacity: 1;
+}
+/*Second image visible*/
+.img-back {
+    opacity: 1;
+}
+.project-card:hover .img-front{
+    opacity: 0;
+}
+.project-card:hover .img-back{
+    opacity: 1;
 }
